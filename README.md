@@ -409,6 +409,7 @@
 -    **URL:** <https://alike.io/cities/>
 -    **API:** `categoryList`
 -    This GraphQl is used for serval cities.
+-   ![image](https://github.com/jay-b-7span/alike_api_document/assets/114227263/0f3e6104-b748-49af-b7e0-136d72434732)
 -    **Query:**
        ```graphql
          query categoryList($filters: CategoryFilterInput) {
@@ -467,4 +468,71 @@
             }
           }
         }
-      ```
+   ```
+-   **API:** `Cities`
+-   This GraphQl used for **Best Places to visit** section.
+-   ![image](https://github.com/jay-b-7span/alike_api_document/assets/114227263/4392e211-fc8a-4051-b4b6-baf7121dffbb)
+-   **Query:**
+    ```graphql
+        {
+          Cities {
+            best {
+              title
+              months {
+                city {
+                  highlights {
+                    title
+                    url
+                    __typename
+                  }
+                  category_id
+                  category_uid
+                  image
+                  name
+                  url_key
+                  __typename
+                }
+                month
+                __typename
+              }
+              __typename
+            }
+            mostVisited {
+              title
+              city {
+                highlights {
+                  title
+                  url
+                  __typename
+                }
+                category_id
+                category_uid
+                image
+                name
+                url_key
+                __typename
+              }
+              __typename
+            }
+            discover {
+              title
+              city {
+                highlights {
+                  title
+                  url
+                  __typename
+                }
+                category_id
+                category_uid
+                image
+                name
+                url_key
+                __typename
+              }
+              __typename
+            }
+            __typename
+          }
+        }
+     ```
+
