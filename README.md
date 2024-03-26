@@ -60,7 +60,7 @@
             __typename
              }
              }
-     ```
+       ```
            
    - **variables:**
         ``` graphql
@@ -93,7 +93,7 @@
             __typename
               }
           }
-           ```
+      ```
   - **API:** `new_products`
     - this Graphql used for **Best Selling Experiences** section.
     - ![image](https://github.com/jay-b-7span/Alike_API_Documentation/assets/114227263/2ad1088a-b293-447b-bf7d-8f1f37701048)
