@@ -408,4 +408,63 @@
 ## **City Page**
 -    **URL:** <https://alike.io/cities/>
 -    **API:** `categoryList`
--    
+-    This GraphQl is used for serval cities.
+-    **Query:**
+       ```graphql
+         query categoryList($filters: CategoryFilterInput) {
+          categories(filters: $filters) {
+            total_count
+            items {
+              uid
+              level
+              name
+              url_key
+              image
+              children {
+                uid
+                level
+                name
+                children {
+                  uid
+                  level
+                  name
+                  image
+                  url_key
+                  product_count
+                  highlights {
+                    title
+                    url
+                    __typename
+                  }
+                  __typename
+                }
+                __typename
+              }
+              __typename
+            }
+            __typename
+          }
+        }
+       ```
+   **variables:**
+      ```graphql
+        {
+          "filters": {
+            "parent_id": {
+              "in": [
+                "717"
+              ]
+            },
+            "category_uid": {
+              "in": [
+                "NzE4",
+                "NzI1",
+                "NzQ5",
+                "ODE3",
+                "ODY3",
+                "ODc2"
+              ]
+            }
+          }
+        }
+      ```
