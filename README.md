@@ -405,5 +405,7 @@
            }
        ```
 
-
-           
+## **City Page**
+-    **URL:** <https://alike.io/cities/>
+-    **API:** `categoryList`
+-    
