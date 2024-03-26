@@ -11,7 +11,7 @@
         query homepage_stories_products($pageSize: Int) {
         homepage_stories_products(pageSize: $pageSize) {
     items { 
-      uid
+      uid 
       id
       url_key
       product_likes
